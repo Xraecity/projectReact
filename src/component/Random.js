@@ -1,7 +1,3 @@
-/* Name: Prince Obioha
-  Date: 30th October, 2023
-*/
-
 import React, { useState, useEffect } from "react";
 import "../styles.css";
 
@@ -45,56 +41,56 @@ function Random() {
 
   const apiCategories = [
     "Animals",
-"Anime",
-"Anti-Malware",
-"Art & Design",
-"Authentication & Authorization",
-"Blockchain",
-"Books",
-"Business",
-"Calendar",
-"Cloud Storage & File Sharing",
-"Continuous Integration",
-"Cryptocurrency",
-"Currency Exchange",
-"Data Validation",
-"Development",
-"Dictionaries",
-"Documents & Productivity",
-"Email",
-"Entertainment",
-"Environment",
-"Events",
-"Finance",
-"Food & Drink",
-"Games & Comics",
-"Geocoding",
-"Government",
-"Health",
-"Jobs",
-"Machine Learning",
-"Music",
-"News",
-"Open Data",
-"Open Source Projects",
-"Patent",
-"Personality",
-"Phone",
-"Photography",
-"Programming",
-"Science & Math",
-"Security",
-"Shopping",
-"Social",
-"Sports & Fitness",
-"Test Data",
-"Text Analysis",
-"Tracking",
-"Transportation",
-"URL Shorteners",
-"Vehicle",
-"Video",
-"Weather",
+    "Anime",
+    "Anti-Malware",
+    "Art & Design",
+    "Authentication & Authorization",
+    "Blockchain",
+    "Books",
+    "Business",
+    "Calendar",
+    "Cloud Storage & File Sharing",
+    "Continuous Integration",
+    "Cryptocurrency",
+    "Currency Exchange",
+    "Data Validation",
+    "Development",
+    "Dictionaries",
+    "Documents & Productivity",
+    "Email",
+    "Entertainment",
+    "Environment",
+    "Events",
+    "Finance",
+    "Food & Drink",
+    "Games & Comics",
+    "Geocoding",
+    "Government",
+    "Health",
+    "Jobs",
+    "Machine Learning",
+    "Music",
+    "News",
+    "Open Data",
+    "Open Source Projects",
+    "Patent",
+    "Personality",
+    "Phone",
+    "Photography",
+    "Programming",
+    "Science & Math",
+    "Security",
+    "Shopping",
+    "Social",
+    "Sports & Fitness",
+    "Test Data",
+    "Text Analysis",
+    "Tracking",
+    "Transportation",
+    "URL Shorteners",
+    "Vehicle",
+    "Video",
+    "Weather"
   ];
 
   const handleSearch = (event) => {
@@ -137,27 +133,12 @@ function Random() {
       >
         Assignment 5: React - Random API{" "}
       </h1>
-        
-      <p>
+      
+      <span className="catgorie">
         <b>Category:</b>{" "}
-        <span style={{ fontSize: "16px" }}>
           {apiEntry ? apiEntry.Category : "No category"}
         </span>
-      </p>
-          
-      <p>
-        <b>API Content:</b> {apiEntry && apiEntry.API}
-      </p>
-      <i>
-        <p>
-          <b>Description:</b>{" "}
-          <span style={{ fontSize: "16px" }}>
-            {apiEntry ? apiEntry.Description : "No description"}
-          </span>
-        </p>
-      </i>
-      <br />
-
+        
       <input
         type="text"
         placeholder="Search for API Categories here"
@@ -165,11 +146,28 @@ function Random() {
         onChange={handleSearch}
         value={searchTerm}
       />
-
-      <div className="button-container">
-        <button className="clear-button" onClick={clearData}>
-          Clear Data
+        
+      <p>
+        <b>Content:</b> {apiEntry ? apiEntry.API : "Search or select from categories"}
+      </p>
+      <i>
+        <p>
+          <b>Description:</b>{" "}
+          <span style={{ fontSize: "16px" }}>
+            {apiEntry ? apiEntry.Description : "Search or select content to display discription"}
+          </span>
+        </p>
+      </i>
+      <br />
+      <button className="clear-button" onClick={clearData}>
+          Start over
         </button>
+      
+      <br />
+      <br />
+      <hr />
+        <address>Categories:</address>
+      <div className="button-container">
         {searchTerm
           ? filteredCategories.map((category, index) => (
               <button
@@ -207,4 +205,3 @@ function Random() {
 }
 
 export default Random;
-
