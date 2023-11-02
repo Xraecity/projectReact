@@ -26,7 +26,7 @@ body {
 h2 {
   text-align: center;
 }
-button{
+button {
   padding: 10px;
   display: inline-block;
   margin: 10px;
@@ -34,17 +34,26 @@ button{
   box-shadow: 2px 2px 2px 2px darkgrey;
   cursor: pointer;
 }
-input{
-  width: 70%;
+input {
+  width: 100%;
   padding: 10px;
   display: inline-block;
   margin: 10px;
   border: 2px solid white;
   box-shadow: 2px 2px 2px 2px darkgrey;
   cursor: pointer;
+  color: white;
 }
-input:focus{
+input:focus {
   border: transparent;
   background-color: dodgerblue;
   color: white;
+}
+.catgorie{
+  float: right;
+  border: 2px solid lightgray;
+  padding: 5px;
+  box-shadow: 2px 2px 2px 2px darkgrey;
+  border-radius: 4%;
+  padding-bottom: 10px;
 }
