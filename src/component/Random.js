@@ -1,3 +1,6 @@
+//Name: Prince Obioha
+// Date: 30th oct, 2023
+// Description: react Assignment 5 get Random API
 import React, { useState, useEffect } from "react";
 import "../styles.css";
 
