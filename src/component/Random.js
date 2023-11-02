@@ -11,7 +11,7 @@ function Random() {
   const [buttonColor, setButtonColor] = useState("black");
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredCategories, setFilteredCategories] = useState([]);
-  const [searchButtonColor, setSearchButtonColor] = useState("black"); 
+  const [searchButtonColor, setSearchButtonColor] = useState("black"); // Default color
 
   const clearData = () => {
     setApiEntry(null);
@@ -81,6 +81,7 @@ function Random() {
   const handleCategoryButtonClick = (category) => {
     setIsHighlighted(false);
 
+    // Toggle button color between orange and dodgerblue when clicked
     setButtonColor((prevColor) =>
       prevColor === "orange" ? "dodgerblue" : "orange"
     );
@@ -90,16 +91,13 @@ function Random() {
 
   return (
     <div className="card">
-      <h1 style={{ color: "#333", fontSize: "24px" }}>Random API Entry</h1>
+      <h1 style={{
+          textAlign: "center"
+          }}>Assignment 5: React - Random API </h1>
       <p>
         <b>API Content:</b>{" "}
-        <span
-          className={isHighlighted ? "button-highlighted" : ""}
-          style={{ fontSize: "18px", fontWeight: "bold" }}
-        >
           {apiEntry && apiEntry.API}
-        </span>
-      </p>
+        </p>
       <p>
         <b>Category:</b>{" "}
         <span style={{ fontSize: "16px" }}>
