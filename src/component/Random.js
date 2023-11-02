@@ -137,14 +137,16 @@ function Random() {
       >
         Assignment 5: React - Random API{" "}
       </h1>
-      <p>
-        <b>API Content:</b> {apiEntry && apiEntry.API}
-      </p>
+        
       <p>
         <b>Category:</b>{" "}
         <span style={{ fontSize: "16px" }}>
           {apiEntry ? apiEntry.Category : "No category"}
         </span>
+      </p>
+          
+      <p>
+        <b>API Content:</b> {apiEntry && apiEntry.API}
       </p>
       <i>
         <p>
