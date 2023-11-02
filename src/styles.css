@@ -26,3 +26,25 @@ body {
 h2 {
   text-align: center;
 }
+button{
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px 2px darkgrey;
+  cursor: pointer;
+}
+input{
+  width: 70%;
+  padding: 10px;
+  display: inline-block;
+  margin: 10px;
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px 2px darkgrey;
+  cursor: pointer;
+}
+input:focus{
+  border: transparent;
+  background-color: dodgerblue;
+  color: white;
+}
